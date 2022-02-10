@@ -175,14 +175,6 @@ export default function App() {
             </Button>
           </Col>
         </Row>
-
-        <Row gutter={[22]}>
-          <Col xs={22} align="middle">
-            <Button type="default" onClick={resetFormFields}>
-              Clear
-            </Button>
-          </Col>
-        </Row>
       </Form>
       <Space direction="vertical">
         <Text strong> Name : {formValues.name} </Text>
@@ -190,8 +182,6 @@ export default function App() {
         <Text type="success"> E-mail : {formValues.email} </Text>
         <Text type="default"> Qualification : {formValues.qualification} </Text>
         <Text mark> salary : {formValues.salary} </Text>
-        {/* <Text code> hobbies : {formValues.hobbies[0]} </Text> */}
-        {/* <Text keyboard> Name : {formValues.dob} </Text> */}
       </Space>
       </Card>
     </div>
