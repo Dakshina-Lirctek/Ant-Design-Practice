@@ -98,12 +98,14 @@ export default function App() {
                   message: "please enter the emailId",
                 },
               ]}
+
             >
               <Input type={"email"} placeholder="E-mail"></Input>
             </Form.Item>
           </Col>
         </Row>
         <Row gutter={[16, 8]} align="middle">
+
           <Col xs={12} lg={8}>
             <Form.Item
               name="qualification"
@@ -123,6 +125,7 @@ export default function App() {
               </Select>
             </Form.Item>
           </Col>
+
           <Col xs={12} lg={8}>
             <Form.Item
               name="salary"
@@ -140,7 +143,9 @@ export default function App() {
                 <Radio.Button value="40-80k">40-80k</Radio.Button>
               </Radio.Group>
             </Form.Item>
+
           </Col>
+
           <Col xs={12} lg={8}>
             <Form.Item name="hobbies" label="Hobbies">
               <Checkbox.Group defaultValue="hockey">
@@ -150,39 +155,49 @@ export default function App() {
               </Checkbox.Group>
             </Form.Item>
           </Col>
+
         </Row>
         <Row gutter={[16, 8]} align="middle">
+
           <Col xs={12} lg={8}>
             <Form.Item name="dob" label="DOB">
               <DatePicker format={dateFormat} />
             </Form.Item>
           </Col>
+
           <Col xs={12} lg={8}>
             <Form.Item name="age" label="Age">
               <Slider defaultValue={18} />
             </Form.Item>
           </Col>
+
           <Col xs={12} lg={8}>
             <Form.Item name="check" label="Check">
               <Switch />
             </Form.Item>
           </Col>
+
         </Row>
         <Row gutter={[24]} align="middle">
+
           <Col xs={22} align="middle">
             <Button type="primary" htmlType="submit">
               Submit
             </Button>
           </Col>
+
         </Row>
       </Form>
       <Space direction="vertical">
+        
         <Text strong> Name : {formValues.name} </Text>
         <Text delete> Password : {formValues.password} </Text>
         <Text type="success"> E-mail : {formValues.email} </Text>
         <Text type="default"> Qualification : {formValues.qualification} </Text>
         <Text mark> salary : {formValues.salary} </Text>
+        
       </Space>
+
       </Card>
     </div>
   );
